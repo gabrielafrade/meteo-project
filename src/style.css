@@ -1,0 +1,21 @@
+body {
+  background-color: white;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+
+.meteo-app {
+  margin: 45px auto;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
+}
