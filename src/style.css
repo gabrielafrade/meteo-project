@@ -90,7 +90,7 @@ a {
 .meteo-app-details {
   display: flex;
   justify-content: center;
-  color: #f7f7f7;
+  gap: 40px;
   margin-top: 10px;
 }
 
