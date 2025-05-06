@@ -4,12 +4,17 @@ body {
   font-optical-sizing: auto;
   font-weight: 100px;
   font-style: normal;
+  font-variant-emoji: only-contour;
 }
 
 header {
   border-bottom: 1px solid #f7f7f7;
   padding: 0 0 30px 0;
   text-align: center;
+}
+
+main {
+  padding: 30px 0;
 }
 
 a {
@@ -46,6 +51,47 @@ a {
   color: white;
   margin-left: 5px;
   font-size: 16px;
+}
+
+.meteo-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meteo-app-city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.meteo-app-date {
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.meteo-app-temperature-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.meteo-app-temperature {
+  display: flex;
+}
+.meteo-app-temperature-value {
+  font-size: 88px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.meteo-app-temperature-unit {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.meteo-app-details {
+  display: flex;
+  justify-content: center;
+  color: #f7f7f7;
+  margin-top: 10px;
 }
 
 footer {
