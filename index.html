@@ -15,19 +15,25 @@
   <body>
     <div class="meteo-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="text"
             placeholder="Enter a city..."
             class="search-form-input"
+            id="search-form-input"
           />
-          <input type="submit" value="Search" class="search-form-button" />
+          <input
+            type="submit"
+            value="Search"
+            class="search-form-button"
+            id="search-form-button"
+          />
         </form>
       </header>
       <main>
         <div class="meteo-app-data">
           <div>
-            <h1 class="meteo-app-city">Lisbon</h1>
+            <h1 class="meteo-app-city" id="meteo-app-city">Lisbon</h1>
             <p class="meteo-app-date">Saturday, 14:25</p>
           </div>
 
@@ -58,5 +64,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
