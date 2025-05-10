@@ -35,11 +35,13 @@
         <div class="meteo-app-data">
           <div>
             <h1 class="meteo-app-city" id="meteo-app-city"></h1>
-            <p class="meteo-app-date">Saturday, 14:25</p>
+            <p class="meteo-app-date" id="time"></p>
           </div>
 
           <div class="meteo-app-temperature-container">
-            <div class="meteo-app-description">🌥️ Cloudy</div>
+            <div class="meteo-app-description">
+              <span id="emoji">🌥️</span><span id="description"></span>
+            </div>
             <div class="meteo-app-temperature">
               <div
                 class="meteo-app-temperature-value"
@@ -50,8 +52,8 @@
           </div>
         </div>
         <div class="meteo-app-details">
-          <p>💧81%</p>
-          <p>🍃31km/h</p>
+          <p>💧<span id="humidity"></span>%</p>
+          <p>🍃 <span id="wind"></span>km/h</p>
         </div>
       </main>
       <footer>
