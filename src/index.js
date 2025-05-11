@@ -9,7 +9,10 @@ function refreshMeteo(response) {
   let windSpeedElement = document.querySelector("#wind");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#emoji");
 
+  iconElement.innerHTML = `<img src= "${response.data.condition.icon_url}"
+      class="meteo-app-emoji"/>`;
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = response.data.temperature.humidity;

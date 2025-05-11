@@ -72,11 +72,32 @@ a {
 .meteo-app-temperature-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.meteo-app-emoji-description {
+  display: flex;
+  align-items: center;
+}
+
+.meteo-app-emoji {
+  width: 55px;
+}
+
+#emoji img {
+  width: 48px;
+  vertical-align: middle;
+}
+
+.meteo-app-description {
+  font-size: 14px;
 }
 
 .meteo-app-temperature {
   display: flex;
+  margin-top: 0px;
 }
+
 .meteo-app-temperature-value {
   font-size: 88px;
   font-weight: bold;
@@ -91,7 +112,14 @@ a {
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-top: 10px;
+}
+
+.meteo-app-humidity {
+  margin: 0;
+}
+
+.meteo-app-wind {
+  margin: 0;
 }
 
 footer {
