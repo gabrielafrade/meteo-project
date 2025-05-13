@@ -21,7 +21,7 @@ a {
   color: #f7f7f7;
 }
 
-.meteo-app {
+.meteo-app-rain {
   margin: 45px auto;
   max-width: 600px;
   padding: 30px;
@@ -31,6 +31,33 @@ a {
     180.3deg,
     rgb(221, 221, 221) 20.5%,
     rgb(110, 136, 161) 70.2%
+  );
+}
+
+.meteo-app-clouds {
+  margin: 45px auto;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  background: radial-gradient(
+    circle at 0.7% 1%,
+    rgb(215, 248, 247) 0%,
+    rgb(102, 188, 239) 100.2%
+  );
+}
+
+.meteo-app-sun {
+  margin: 45px auto;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(253, 239, 132) 0%,
+    rgb(247, 198, 169) 54.2%,
+    rgb(21, 186, 196) 100.3%
   );
 }
 

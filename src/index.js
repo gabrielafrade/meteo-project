@@ -20,6 +20,7 @@ function refreshMeteo(response) {
   timeElement.innerHTML = formatDate(date);
   temperatureElement.innerHTML = Math.round(temperature);
 
+  changeTheme(response.data.condition.icon_url);
   getForecast(response.data.city);
 }
 
@@ -92,6 +93,28 @@ function displayForecast(response) {
 
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
+}
+
+function changeTheme(iconUrl) {
+  let themeElement = document.querySelector(".meteo-app");
+  themeElement.classList.remove(
+    "meteo-app-rain",
+    "meteo-app-clouds",
+    "meteo-app-sun"
+  );
+  if (
+    iconUrl.includes("rain") ||
+    iconUrl.includes("shower") ||
+    iconUrl.includes("thunderstorm") ||
+    iconUrl.includes("snow") ||
+    iconUrl.includes("mist")
+  ) {
+    themeElement.classList.add("meteo-app-rain");
+  } else if (iconUrl.includes("clouds")) {
+    themeElement.classList.add("meteo-app-clouds");
+  } else {
+    themeElement.classList.add("meteo-app-sun");
+  }
 }
 
 let searchFormElement = document.querySelector("#search-form");
